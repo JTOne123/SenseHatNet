@@ -1,5 +1,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 2.8.9)
 
+SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -march=armv8-a")
+
 SET(LIBRTIMUWrapper_SRCS
     rtimulibwrapper.cpp
     fcntl.cpp
