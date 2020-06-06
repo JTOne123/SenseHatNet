@@ -8,7 +8,7 @@ ENV CXX=arm-linux-gnueabihf-g++
 WORKDIR /opt
 
 RUN	git clone https://github.com/raspberrypi/tools.git && \
-    ln -sf /opt/tools/arm-bcm2708/arm-rpi-4.9.3-linux-gnueabihf/bin/* /usr/local/bin/
+    ln -sf /opt/tools/arm-bcm2708/gcc-linaro-arm-linux-gnueabihf-raspbian-x64/bin/* /usr/local/bin/
 
 RUN git clone https://github.com/RPi-Distro/RTIMULib.git
 
