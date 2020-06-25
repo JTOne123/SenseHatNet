@@ -10,7 +10,15 @@
     <IncludeSymbols>True</IncludeSymbols>
     <RepositoryUrl>https://github.com/johannesegger/SenseHatNet</RepositoryUrl>
     <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <PublishRepositoryUrl>true</PublishRepositoryUrl>
+    <IncludeSymbols>true</IncludeSymbols>
+    <SymbolPackageFormat>snupkg</SymbolPackageFormat>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.SourceLink.GitHub" Version="1.0.0" PrivateAssets="All" />
+  </ItemGroup>
+
   <ItemGroup>
     <EmbeddedResource Include="Resources/SCUMM-8px-unicode.ttf" />
     <Content Include="Native/libRTIMULibWrapper.so" CopyToOutputDirectory="PreserveNewest" PackagePath="runtimes\linux-arm\native">
